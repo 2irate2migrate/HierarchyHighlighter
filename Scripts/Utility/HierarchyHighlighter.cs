@@ -17,11 +17,11 @@ namespace Scripts.Utility
 
 
 
-        public static readonly Color DEFAULT_BACKGROUND_COLOR = new Color(0.76f, 0.76f, 0.76f, 1f);
+        public static readonly Color DEFAULT_BACKGROUND_COLOR = new Color(0,0,0,0);
 
-        public static readonly Color DEFAULT_BACKGROUND_COLOR_INACTIVE = new Color(0.306f, 0.396f, 0.612f, 1f);
+        public static readonly Color DEFAULT_BACKGROUND_COLOR_INACTIVE = new Color(0,0,0,0);
 
-        public static readonly Color DEFAULT_TEXT_COLOR = Color.black;
+        public static readonly Color DEFAULT_TEXT_COLOR = Color.white;
 
 
 
@@ -63,6 +63,7 @@ namespace Scripts.Utility
         //
         //==============================================================================
 
+        [Header("Icon")] public Texture2D Icon = null;
 
         [Header("Active State")]
         public Color Text_Color = DEFAULT_TEXT_COLOR;
